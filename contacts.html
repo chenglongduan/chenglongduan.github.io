@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact information for Chenglong Duan, including professional and personal emails, office address, and announcements." />
+  <meta name="robots" content="index, follow" />
+  <title>Contacts | Chenglong Duan</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="images/favicon.png" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d7cfe6;
+      color: #333;
+    }
+    .banner {
+      width: 100%;
+      height: 250px;
+      background: url('images/banner.jpg') no-repeat center center;
+      background-size: cover;
+    }
+    .navbar {
+      background-color: #a19f9f;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #ccc;
+    }
+    .navbar a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      background-color: #b0c2be;
+    }
+    .navbar a.active {
+      background-color: #b0c2be;
+      color: #000;
+    }
+
+    .contacts-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .contacts-description {
+      display: flex;
+      flex-direction: column;
+      max-width: 1000px;
+      width: 100%;
+      font-size: 18px;
+    }
+    .contact-item {
+      margin-bottom: 20px;
+      background: #f6f2ff;
+      padding: 14px 18px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .contact-label {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .contact-value {
+      color: #2a4d9b;
+    }
+    .contact-value a {
+      color: #2a4d9b;
+      text-decoration: underline;
+    }
+    .contact-value a:hover {
+      color: #1c3473;
+    }
+    .contact-notes {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #eee8f5;
+      border: 1px dashed #aaa;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #555;
+    }
+    /* Screen reader only */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner Image -->
+  <div class="banner"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="news.html">News</a>
+    <a href="contacts.html" class="active">Contacts</a>
+  </nav>
+
+  <!-- Contacts Section -->
+  <main class="contacts-container">
+    <section class="contacts-description">
+
+      <div class="contact-item">
+        <div class="contact-label">📧 Work Email:</div>
+        <div class="contact-value">
+          <a id="work-email" href="#"></a>
+          <span id="work-email-desc" class="sr-only">Work email address of Chenglong Duan</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-label">📬 Personal Email:</div>
+        <div class="contact-value">
+          <a id="personal-email" href="#"></a>
+          <span id="personal-email-desc" class="sr-only">Personal email address of Chenglong Duan</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-label">🏢 Office Address:</div>
+        <div class="contact-value">
+           Department of Earth, Environmental and Planetary Sciences, 6100 Main St., Houston, TX 77005
+        </div>
+      </div>
+
+      <div class="contact-notes">
+        This section is reserved for upcoming changes to contact information, important announcements, or job openings.<br />
+        Please check back for updates.
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    // Email addresses obfuscation to avoid spam bots
+    const emails = [
+      { id: "work-email", user: "cd160", domain: "rice.edu" },
+      { id: "personal-email", user: "chenglongduan.nju", domain: "gmail.com" }
+    ];
+    emails.forEach(({ id, user, domain }) => {
+      const el = document.getElementById(id);
+      const full = `${user}@${domain}`;
+      el.textContent = full;
+      el.href = "mailto:" + full;
+    });
+  </script>
+
+</body>
+</html>

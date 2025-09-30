@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research overview on seismic imaging, Yellowstone caldera, near surface earth structure, geophysics AI, earthquake and explosion and induced seismicity.">
+<meta name="robots" content="index, follow" />
+  <title>Research | Chenglong Duan</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d7cfe6;
+      color: #333;
+    }
+
+    /* Banner Image */
+    .banner {
+      width: 100%;
+      height: 250px;
+      background: url('images/banner.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    /* Navigation */
+    .navbar {
+      background-color: #a19f9f;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .navbar a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      background-color: #b0c2be;
+    }
+
+    .navbar a.active {
+      background-color: #b0c2be;
+      color: #000;
+    }
+
+    /* Research Section */
+    .research-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .research-description {
+      display: flex;
+      flex-direction: column;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .research-entry {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      margin-bottom: 40px;
+      gap: 20px;
+    }
+
+    .research-text {
+      flex: 2;
+    }
+
+    .research-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .research-content {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .research-content p {
+      margin-bottom: 1em;
+      text-indent: 2em;
+    }
+
+    .research-content p.no-indent {
+      text-indent: 0;
+    }
+
+    .research-image {
+      max-width: 90%;
+      width: 700px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .research-entry {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .research-image {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Banner Image -->
+  <div class="banner"></div>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="news.html">News</a>
+    <a href="contacts.html">Contacts</a>
+  </div>
+
+  <!--  Research Section  -->
+  <div class="research-container">
+    <div class="research-description">
+
+     <!-- Research 1 -->
+      <div class="research-entry">
+        <div class="research-text">
+          <div class="research-title">1. Imaging the magmatic system</div>
+          <div class="research-content">
+            <p class="no-indent">Volcanic hazards can have severe consequence including loss of life and economic loss and thus require accurate knowledge of subsurface structures to improve risk mitigation. The diverse types of volcanoes in the US offer unique opportunities to study magmatic systems, from continental volcanoes (e.g., Yellowstone) to oceanic volcanoes (e.g., Axial Seamount). From an instrumentation perspective, traditional permanent or transportable arrays have limitations on spatial resolution. From a computational perspective, advances in high-performance computing now enable full elastic wave simulations to image details of Earth's interior. For example, controlled-source experiments in Yellowstone for the first time allowed us to image magma reservoir's top and estimate porosity and magmatic volatile-melt fraction within this cap layer. Ongoing work in Mount St. Helens provides another example using full waveform tomography, where thousands of nodal stations are being used to constrain seismic P and S wave velocities using active explosion sources and passive ambient noise cross-correlations.</p>
+            <p>My long-term research goal is to advance our understanding of the structure and dynamics of magmatic systems across the crust. In particular, I seek to resolve fluid pathways in the upper crust, recharge channels, in-reservoir sill structures, and lower crust magma storage chamber. Seismic data will be obtained from newly deployed or recently developed seismic arrays through collaborative field efforts in the department.</p>
+          </div>
+        </div>
+        <img class="research-image" src="images/research1.jpg" alt="Imaging the magmatic system">
+      </div>
+
+      <!-- Research 2 -->
+      <div class="research-entry">
+        <div class="research-text">
+          <div class="research-title">2. Crustal magma model and novel seismic imaging method</div>
+          <div class="research-content">
+            <p class="no-indent">I aim to develop realistic crustal magma models for testing seismic imaging workflows, moving beyond oversimplified low-velocity anomalies. Inspired by the industry-built Valhall North Sea model, where gas clouds resemble melt lenses in conceptual magma transport models, I plan to extend this model to caldera scale. Based on one of the most thoroughly studied volcanoes (e.g., Yellowstone), I plan to translate multi-disciplinary interpretations (geophysics, geodesy, geochemistry) into seismic velocity and density models across the crust. The new models will enable synthetic studies on magma imaging and volcanic seismicity, providing opportunities for multiple publications, as I have demonstrated in exploration seismology, while also informing the design of future field work.</p>
+            <p>As we start to deploy denser local seismic stations to remote areas in recent decades, detailed wave types can be coherently recorded which were impossible to identify in the past sparse data (e.g., higher-mode surface waves, second-order scattering waves). I view these previously overlooked signals as carrying valuable information about specific Earth materials, making them worth pursuing in practice. This perspective builds on my previous work, where I leveraged the interaction between adjoint P and S waves to achieve high-resolution imaging of micro-earthquake sources in oil and gas reservoirs as well as the top of the magma reservoir beneath Yellowstone caldera.</p>
+          </div>
+        </div>
+        <img class="research-image" src="images/research2.jpg" alt="Crustal magma model and novel seismic imaging method">
+      </div>
+
+ <!-- Research Item 3 -->
+      <div class="research-entry">
+        <div class="research-text">
+          <div class="research-title">3. Near surface hazard detection</div>
+          <div class="research-content">
+             <p class="no-indent">Monitoring near-surface hazards within the uppermost crust of the Earth is crucial for maintaining environmental sustainability. As a master student, I worked on karst cave imaging in limestone areas, carrying out the full process from field acquisition to interpretation for the city metro and infrastructure projects in China. This work, aimed at mitigating risks of foundation collapse, has remained my most-cited publication and continues to shape my perspective on applied near-surface seismology.</p>
+            <p>I am excited about this research direction because it requires evidence with unprecedented temporal and spatial resolution, demanding the use of cutting-edge technologies. I plan to utilize fiber-optic sensing (DAS) to detect subtle subsurface changes, with two main applications: (1) monitoring land subsidence in major US cities driven by groundwater depletion and oil and gas production, and (2) tracking magma movement and eruption dynamics in volcanoes such as those in Hawaii. My approach will integrate DAS time-lapse imaging with coda wave interferometry, and it will be highly collaborative by incorporating geodetic methods such as InSAR and strong partnerships with government agencies to ensure scientific and societal impact.</p>
+          </div>
+        </div>
+      <img class="research-image" src="images/research3.jpg" alt="Near surface hazard detection">
+      </div>
+      <!-- Research 4 -->
+      <div class="research-entry">
+        <div class="research-text">
+          <div class="research-title">4. AI-based source type discrimination</div>
+          <div class="research-content">
+            <p class="no-indent">AI has shown strong capabilities in expediting source discrimination for large seismic datasets. For instance, automatic classification of explosions versus earthquakes is important to the nuclear monitoring project led by the Air Force Research Laboratory. Using the difference between P and S pick probabilities (Pprob−Sprob) output from previously developed phase detection models, classification accuracy can achieve approximately equivalent to the traditional P/S amplitude ratios without requiring any customization. Similarly, AI has been applied to distinguish low-frequency long-duration induced seismicity from continuous borehole seismic data in the Permian Basin, Texas. Spatiotemporal analysis suggested that these special classified events may be triggered by the injected fluid flow in the fractures during hydraulic stimulations.</p>
+            <p>Potential future directions include training convolutional neural network (CNN) models using multiple features, such as Pprob−Sprob and P/S amplitude ratios. Our recent publication showed that combining these metrics enhanced linear separability, suggesting improved classification performance. Another promising direction is conducting 3D wave propagation simulations for explosion sources and comparing the resulting P/S ratios with observed seismic data to improve physical understanding and model validation.</p>
+          </div>
+        </div>
+        <img class="research-image" src="images/research4.jpg" alt="AI-based source type discrimination">
+      </div>
+
+    </div> <!-- End of .research-description -->
+  </div> <!-- End of .research-container -->
+
+</body>
+</html>
+

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chenglongduan.github.io/sitemap.xml

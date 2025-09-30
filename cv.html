@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="description" content="Dr. Chenglong Duan's Curriculum Vitae (CV)" />
+ <meta name="robots" content="index, follow" />
+
+  <title>Chenglong Duan – Curriculum Vitae | Seismology</title>
+ <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+ <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d7cfe6;
+      color: #333;
+    }
+
+    .banner {
+      width: 100%;
+      height: 250px;
+      background: url('images/banner.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .navbar {
+      background-color: #a19f9f;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .navbar a {
+      color: #333;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      background-color: #b0c2be;
+    }
+
+    .navbar a.active {
+      background-color: #b0c2be;
+      color: #000;
+    }
+
+    h1 {
+      font-size: 26px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    iframe {
+      border: 1px solid #ccc;
+      width: 90%;
+      max-width: 1000px;
+      height: 700px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .download-link {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      background-color: #333;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .download-link:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner Image -->
+  <div class="banner"></div>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="cv.html" class="active">CV</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="news.html">News</a>
+    <a href="contacts.html">Contacts</a>
+  </div>
+
+  <!-- CV Content -->
+  <div class="container">
+    <iframe src="my-cv.pdf"></iframe>
+  </div>
+
+  <!-- Download Button -->
+  <a class="download-link" href="my-cv.pdf" download>Download CV as PDF</a>
+
+</body>
+</html>
