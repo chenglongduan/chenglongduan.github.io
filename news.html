@@ -21,13 +21,30 @@
       background: url('images/banner.jpg') no-repeat center center;
       background-size: cover;
     }
+@media (max-width: 768px) {
+  .banner {
+    height: 120px; 
+    background-position: center top; 
+    background-size: cover;
+  }
+}
+
     .navbar {
       background-color: #a19f9f;
       overflow: hidden;
       display: flex;
       justify-content: center;
       border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
     }
+
+@media (max-width: 768px) {
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+
     .navbar a {
       display: block;
       color: #333;
@@ -67,8 +84,8 @@
       flex: 1;
     }
     .news-meta {
-      font-size: 14px;
-      color: #555;
+      font-size: 16px;
+      color: #070808;
       margin-bottom: 6px;
     }
     .news-title a {
@@ -101,7 +118,7 @@
 
       <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">Rice University · 2025-04-16</div>
+          <div class="news-meta"> <strong>Rice University </strong> · 2025-04-16</div>
           <div class="news-title">
             <a href="https://news.rice.edu/news/2025/inside-yellowstones-fiery-heart-rice-researchers-map-volatile-rich-cap-offering-clues"
                target="_blank" rel="noopener noreferrer"
@@ -113,7 +130,7 @@
 
      <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">Physics Today · 2025-05-05</div>
+          <div class="news-meta"><strong>Physics Today</strong> · 2025-05-05</div>
           <div class="news-title">
             <a href="https://pubs.aip.org/physicstoday/article/78/6/14/3347427/A-rumbling-truck-enables-a-clearer-view-of"
                target="_blank" rel="noopener noreferrer"
@@ -125,7 +142,7 @@
 
       <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">Northeast Public Radio · 2025-05-12</div>
+          <div class="news-meta"><strong>Northeast Public Radio</strong> · 2025-05-12</div>
           <div class="news-title">
             <a href="https://www.wamc.org/show/the-best-of-our-knowledge/2025-05-12/studying-yellowstone-and-affectionate-mothering"
                target="_blank" rel="noopener noreferrer"
@@ -137,7 +154,7 @@
 
       <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">U.S. Geological Survey · 2025-04-28</div>
+          <div class="news-meta"><strong>U.S. Geological Survey</strong> · 2025-04-28</div>
           <div class="news-title">
             <a href="https://www.usgs.gov/observatories/yvo/news/using-custom-earthquakes-define-top-yellowstones-magma-reservoir"
                target="_blank" rel="noopener noreferrer"
@@ -149,7 +166,7 @@
 
       <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">FOX · 2025-04-24</div>
+          <div class="news-meta"><strong>FOX</strong> · 2025-04-24</div>
           <div class="news-title">
             <a href="https://www.foxweather.com/earth-space/yellowstone-national-park-magma-cap-volcanic-eruption#google_vignette"
                target="_blank" rel="noopener noreferrer"
@@ -161,7 +178,7 @@
 
       <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">People · 2025-04-24</div>
+          <div class="news-meta"><strong>People</strong> · 2025-04-24</div>
           <div class="news-title">
             <a href="https://people.com/scientists-discover-magma-cap-yellowstone-national-park-likely-preventing-volcanic-eruption-11721089"
                target="_blank" rel="noopener noreferrer"
@@ -173,7 +190,7 @@
 
       <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">Forbes · 2025-04-26</div>
+          <div class="news-meta"><strong>Forbes</strong> · 2025-04-26</div>
           <div class="news-title">
             <a href="https://www.forbes.com/sites/davidbressan/2025/04/26/natural-safety-valve-prevents-yellowstone-volcano-from-blowing-up/"
                target="_blank" rel="noopener noreferrer"
@@ -185,7 +202,7 @@
 
       <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">BBC · 2025-04-16</div>
+          <div class="news-meta"><strong>BBC</strong> · 2025-04-16</div>
           <div class="news-title">
             <a href="https://www.sciencefocus.com/news/scientists-earthquakes-peer-into-yellowstone-volcano"
                target="_blank" rel="noopener noreferrer"
@@ -197,7 +214,7 @@
 
       <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">The Washington Post · 2025-04-24</div>
+          <div class="news-meta"><strong>The Washington Post</strong> · 2025-04-24</div>
           <div class="news-title">
             <a href="https://www.washingtonpost.com/nation/2025/04/24/yellowstone-magma-cap/"
                target="_blank" rel="noopener noreferrer"
@@ -209,7 +226,7 @@
 
       <article class="news-item">
         <div class="news-content">
-          <div class="news-meta">CNN · 2025-05-01</div>
+          <div class="news-meta"><strong>CNN</strong> · 2025-05-01</div>
           <div class="news-title">
             <a href="https://www.cnn.com/2025/05/01/science/video/geoscientists-discover-magma-cap-beneath-yellowstone-digvid"
                target="_blank" rel="noopener noreferrer"
@@ -221,7 +238,7 @@
 
 <article class="news-item">
   <div class="news-content">
-    <div class="news-meta">ABC · 2025-04-23</div>
+    <div class="news-meta"><strong>ABC</strong> · 2025-04-23</div>
     <div class="news-title">
       <a href="https://abcnews.go.com/US/hidden-magma-cap-discovered-yellowstone-national-park/story?id=121083908"
          target="_blank" rel="noopener noreferrer" 
@@ -233,7 +250,7 @@
 
 <article class="news-item">
   <div class="news-content">
-    <div class="news-meta">Discover · 2025-04-23</div>
+    <div class="news-meta"><strong>Discover</strong> · 2025-04-23</div>
     <div class="news-title">
       <a href="https://www.discovermagazine.com/yellowstones-magma-reservoir-reveals-insights-into-future-volcanic-activity-47420"
          target="_blank" rel="noopener noreferrer"

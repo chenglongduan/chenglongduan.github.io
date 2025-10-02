@@ -25,13 +25,35 @@
       background-size: cover;
     }
 
+@media (max-width: 768px) {
+  .banner {
+    height: 120px; 
+    background-position: center top; 
+    background-size: cover;
+  }
+
+  .profile-pic {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
     /* Navigation bar */
     .navbar {
       background-color: #a19f9f;
       display: flex;
       justify-content: center;
       border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
     }
+
+@media (max-width: 768px) {
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
 
     .navbar a {
       color: #333;
@@ -112,6 +134,15 @@
       margin-bottom: 25px;
       line-height: 1.5;
     }
+
+    @media (max-width: 768px) {
+      .profile-pic {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -143,13 +174,14 @@
         <a href="https://www.linkedin.com/in/chenglong-duan-062321105" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://www.researchgate.net/profile/Chenglong-Duan" target="_blank" rel="noopener noreferrer">ResearchGate</a>
         <a href="https://orcid.org/0000-0002-9128-9545" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://github.com/chenglongduan?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
 
       <h2>Research Interests</h2>
       <ul>
         <li>Connect computational seismology with observational seismology.</li>
         <li>Develop exploration-scale imaging methods to study solid Earth structures (e.g., magmatic system, energy resources) and mitigate natural hazards, with potential extensions to other planets (Moon, Mars).</li>
-        <li>Leverage AI techniques to automatically label massive seismic data by source types (e.g., explosions, earthquakes, blasts).</li>
+        <li>Leverage AI techniques to automatically label massive seismic data by source types (e.g., explosions, earthquakes, induced seismicity).</li>
       </ul>
 
           </div>

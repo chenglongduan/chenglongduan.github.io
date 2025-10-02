@@ -21,13 +21,29 @@
       background: url('images/banner.jpg') no-repeat center center;
       background-size: cover;
     }
+@media (max-width: 768px) {
+  .banner {
+    height: 120px; 
+    background-position: center top; 
+    background-size: cover;
+  }
+}
+
     .navbar {
       background-color: #a19f9f;
       overflow: hidden;
       display: flex;
       justify-content: center;
       border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
     }
+
+@media (max-width: 768px) {
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
     .navbar a {
       display: block;
       color: #333;
