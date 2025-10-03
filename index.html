@@ -14,7 +14,6 @@
       font-family: Arial, sans-serif;
       background-color: #d7cfe6;
       color: #333;
-      font-size: 18px;
     }
 
     /* Banner image */
@@ -48,13 +47,6 @@
       flex-wrap: wrap;
     }
 
-@media (max-width: 768px) {
-  .navbar a {
-    padding: 10px 12px;
-    font-size: 14px;
-  }
-}
-
     .navbar a {
       color: #333;
       text-align: center;
@@ -71,6 +63,13 @@
       background-color: #b0c2be;
       color: #000;
     }
+
+@media (max-width: 768px) {
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
 
     /* Layout */
     .container {
@@ -103,6 +102,7 @@
     }
 
     .links a {
+      font-size: 18px;
       margin-right: 15px;
       text-decoration: none;
       color: #0073e6;
@@ -125,11 +125,19 @@
     }
 
     p {
+      font-size: 18px;
       margin-bottom: 24px;
       line-height: 1.7;
     }
+    ul {
+      list-style-position: outside; 
+      padding-left: 20px; 
+      margin-left: 0;
+    }
+
 
     li {
+      font-size: 18px;
       margin-top: 25px;
       margin-bottom: 25px;
       line-height: 1.5;
@@ -180,7 +188,7 @@
       <h2>Research Interests</h2>
       <ul>
         <li>Connect computational seismology with observational seismology.</li>
-        <li>Develop exploration-scale imaging methods to study solid Earth structures (e.g., magmatic system, energy resources) and mitigate natural hazards, with potential extensions to other planets (Moon, Mars).</li>
+        <li>Develop exploration-scale imaging methods to study Earth's crustal structures (e.g., magmatic system, energy resources) and mitigate natural hazards, with potential extensions to other planets.</li>
         <li>Leverage AI techniques to automatically label massive seismic data by source types (e.g., explosions, earthquakes, induced seismicity).</li>
       </ul>
 
