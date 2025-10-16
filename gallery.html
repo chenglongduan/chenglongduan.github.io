@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chenglong Duan's gallery, fieldwork." />
+ <meta name="robots" content="index, follow" />
+  <title>Gallery | Chenglong Duan</title>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="images/favicon.png" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d7cfe6;
+      color: #333;
+    }
+
+    /* Banner Image */
+    .banner {
+      width: 100%;
+      height: 250px;
+      background: url('images/banner.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+   @media (max-width: 768px) {
+     .banner {
+      height: 120px; 
+      background-position: center top; 
+      background-size: cover;
+    }
+   }
+
+    /* Navigation */
+    .navbar {
+      background-color: #a19f9f;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+     .navbar a:hover {
+      background-color: #b0c2be;
+    }
+  
+    .navbar a:hover,
+    .navbar a.active {
+      background-color: #b0c2be;
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .navbar a {
+       padding: 10px 12px;
+       font-size: 14px;
+      }
+    }
+
+    /* Albums */
+    .albums-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
+     padding: 50px 20px;
+     max-width: 1000px;
+     margin: 0 auto;
+     justify-content: start;
+   }
+
+    .album-box {
+      width: 250px;
+      text-align: center;
+      background-color: #f6f2ff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #333;
+    }
+
+    .album-box:hover {
+      background-color: #e0e0ff;
+    }
+
+    .album-box img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .album-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+   @media (max-width: 768px) {
+    .albums-container {
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+    }
+   }
+
+    @media (max-width: 480px) {
+     .albums-container {
+      grid-template-columns: 1fr;
+      justify-items: center;
+     }
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="banner"></div>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="news.html">News</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contacts.html">Contacts</a>
+  </div>
+
+  <div class="albums-container">
+    <a class="album-box" href="folders/Mount_Rainier.html">
+      <img src="images/Mount_Rainier/cover.jpg" alt="Mount_Rainier">
+      <div class="album-title">Fieldwork at Mount Rainier</div>
+    </a>
+
+ 
+
+  </div>
+
+</body>
+</html>
