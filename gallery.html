@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Chenglong Duan's gallery, fieldwork." />
+  <meta name="description" content="Chenglong Duan's gallery, fieldwork, Nodes Deployment." />
  <meta name="robots" content="index, follow" />
   <title>Gallery | Chenglong Duan</title>
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
@@ -75,10 +75,12 @@
      max-width: 1000px;
      margin: 0 auto;
      justify-content: start;
+     align-items: start;
    }
 
     .album-box {
       width: 250px;
+      box-sizing: border-box;
       text-align: center;
       background-color: #707070;
       padding: 16px;
@@ -86,6 +88,7 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-decoration: none;
       color: #fcfcfc;
+      align-self: start;
     }
 
     .album-box:hover {
@@ -134,12 +137,18 @@
     <a href="contacts.html">Contacts</a>
   </div>
 
+ <!-- Album 1 -->
   <div class="albums-container">
     <a class="album-box" href="folders/Mount_Rainier.html">
       <img src="images/Mount_Rainier/cover.jpg" alt="Mount_Rainier">
       <div class="album-title">Fieldwork at Mount Rainier</div>
     </a>
-
+ 
+<!-- Album 2 -->
+    <a class="album-box" href="folders/Nodes_Deployment.html">
+      <img src="images/Nodes_Deployment/cover.jpg" alt="Nodes_Deployment">
+      <div class="album-title">Rice campus nodes deployment</div>
+    </a>
  
 
   </div>
